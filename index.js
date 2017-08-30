@@ -10,7 +10,9 @@ var content = fs.readFileSync(path.resolve(__dirname, 'input.docx'), 'binary');
 var angularParser = function(tag) {
   return {
     // This adds support for the . when using angular expressions  
-    get: tag === '.' ? function(s){ return s;} : expressions.compile(tag.replace(/’/g, "'"))
+    get: tag === '.' ? function(s){ return s;} : function(s) {
+      return expressions.compile(tag.replace(/’/g, "'"))(s);
+    }
   };
 };
 
