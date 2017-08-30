@@ -1,0 +1,13 @@
+{
+  "name": "docxtemplater-num-bug",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/york-solutions/docxtemplater-num-bug.git"
+  },
+  "dependencies": {
+    "angular-expressions": "^0.3.0",
+    "docxtemplater": "^3.1.7",
+    "jszip": "^2.6.1"
+  }
+}
